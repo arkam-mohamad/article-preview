@@ -1,0 +1,103 @@
+*{
+  font-family: 'Manrope', sans-serif;
+}
+body{
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  width: 700px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0;
+  margin: 100px auto;
+  height: 300px;
+}
+.drawer{
+  background-image: url('./images/drawers.jpg');
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px 0 0 10px;
+}
+.content{
+  width: 70%;
+  padding: 40px;
+  position: relative;
+}
+h1{
+  font-size: 18px;
+  color: hsl(217, 19%, 35%);
+}
+p{
+  font-size: 13px;
+  color: hsl(212, 23%, 69%);
+}
+.profile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile > div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+h2{
+  font-size: 14px;
+  margin-bottom: -10px;
+  color: hsl(217, 19%, 35%);
+}
+.picture{
+  width:40px;
+  border-radius: 50%;
+}
+.share{
+  padding: 5px;
+  border-radius: 50%;
+}
+.gray{
+  background-color: hsl(217, 19%, 35%);
+}
+.action{
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  border-radius: 10px;
+  position: absolute;
+  top:150px;
+  left: 200px;
+}
+.action p{
+  color: white;
+}
+.hidden{
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  main{
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+  }
+  .drawer{
+    width: 90%;
+    border-radius: 10px 10px 0 0;
+  }
+  .action{
+    width: 100%;
+    padding: 10px 0;
+    top:180px;
+    left: 0;
+  }
+}
